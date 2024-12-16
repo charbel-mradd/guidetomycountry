@@ -1,0 +1,265 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #2c3e50;
+    background: #f3f4f6;
+    overflow-x: hidden;
+    line-height: 1.6;
+    text-align: center ;
+}
+
+header {
+    background: linear-gradient(to right, #0f1c39, #243b55);
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    background: #831e13;
+    color: #fff;
+}
+
+.internal-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.internal-nav a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #0f1c39;
+    padding: 10px 20px;
+    background-color: rgb(213, 188, 188);
+    border: 2px solid #0f1c39;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.internal-nav a:hover {
+    background-color: #831e13;
+    color: white;
+}
+
+#contact-hero {
+    background: url('https://t4.ftcdn.net/jpg/05/04/78/25/360_F_504782581_LHwsDbXlrFiiadWC4i15yV2lhbJnB8g0.jpg') no-repeat center center/cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+#contact-hero h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+#contact-hero p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+form {
+    width: 60%;
+    margin: 2rem auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #831e13;
+    color: white;
+    font-size: 16px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+form button:hover {
+    transform: translateY(-5px);
+}
+
+footer {
+    background-color: #0f1c39;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 14px;
+}
+
+
+#hero {
+    background: url("france.webp")no-repeat center center/cover ;
+    height: 90vh;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeIn 1.5s ease;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin: 0;
+    text-transform: uppercase;
+    animation: slideIn 1s ease;
+    text-align: center;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    animation: slideIn 1.5s ease;
+    text-align: center;
+    color: whitesmoke;
+}
+
+
+
+
+section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #fff;
+    margin: 1rem 0;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 3rem;
+    color: #0f1c39;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background: #831e13;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+section p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 1rem 0;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.image-section {
+    background-image: url('france.jpg') no-repeat center center/cover;
+    padding: 5rem 2rem;
+    text-align: center;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.image-section h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.image-section p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: #eee;
+}
+
+footer {
+    background: #0f1c39;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 1rem;
+}
+
+#culture, #fashion, #landmarks, #contact {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 5rem 2rem;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+#perloader{
+    background: #ffffff url(preloader.gif) no-repeat center center;
+    background-size: 20%;
+    height: 100%;
+    width:100%;
+    position: fixed;
+    z-index:100;
+
+}
+
+#landmarks-hero{
+    background: url('https://lelongweekend.com/wp-content/uploads/2021/05/LLW-Paris-France-scaled.jpg') no-repeat center center/cover;
+}
+
+#fashion-hero{
+    background: url("https://gulabifashion.com/wp-content/uploads/2018/08/paris-fashion-week-gulabifashion.com_.jpg") no-repeat center center/cover;
+}

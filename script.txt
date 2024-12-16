@@ -1,0 +1,26 @@
+document.querySelectorAll('.internal-nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').slice(1);
+        const targetElement = document.getElementById(targetId);
+        window.scrollTo({
+            top: targetElement.offsetTop - 50,
+            behavior: 'smooth'
+        });
+    });
+});
+
+const form = document.querySelector('form');
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = document.querySelector('#name').value;
+    const email = document.querySelector('#email').value;
+    const message = document.querySelector('#message').value;
+
+    if (name && email && message) {
+        alert('Thank you for your message, ' + name + '! We will get back to you soon.');
+        form.reset();
+    } else {
+        alert('Please fill out all fields.');
+    }
+});
